@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Web Page</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>Interactive Web Page with JavaScript and CSS</h1>
+
+  <button id="hover-btn">Hover Over Me</button>
+
+  <div id="banner">Welcome to Our Site!</div>
+  <p id="fade-text">This text will fade out after 2 seconds.</p>
+
+  <div>
+    <h2>Calculate Rectangle Area</h2>
+    <input type="number" id="length" placeholder="Length">
+    <input type="number" id="width" placeholder="Width">
+    <button onclick="calculateArea()">Calculate Area</button>
+    <p id="area-result"></p>
+  </div>
+
+  <div>
+    <button onclick="demonstrateScope()">Check Scope</button>
+    <p id="scope-result"></p>
+  </div>
+
+  <div>
+    <button onclick="toggleModal()">Toggle Modal</button>
+  </div>
+
+  <div id="modal" class="hidden">
+    <p>This is a modal!</p>
+    <button onclick="toggleModal()">Close</button>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+</html>
